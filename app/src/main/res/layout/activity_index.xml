@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.fernana6.sqlite.activities.IndexActivity">
+
+
+    <Button
+        android:id="@+id/viewUsers"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver usuarios"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/addUser"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir usuario"
+        app:layout_constraintTop_toBottomOf="@+id/viewUsers"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/viewUsersSpinner"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver spinner usuarios"
+        app:layout_constraintTop_toBottomOf="@+id/addUser"
+        android:textAllCaps="false"/>
+
+</android.support.constraint.ConstraintLayout>

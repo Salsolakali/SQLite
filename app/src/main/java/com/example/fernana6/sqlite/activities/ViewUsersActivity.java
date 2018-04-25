@@ -1,4 +1,4 @@
-package com.example.fernana6.sqlite;
+package com.example.fernana6.sqlite.activities;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.fernana6.sqlite.ConexionSQLHelper;
+import com.example.fernana6.sqlite.R;
+import com.example.fernana6.sqlite.Utilidades;
 
 import java.util.ArrayList;
 
@@ -35,6 +39,7 @@ public class ViewUsersActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.btnBuscar:consultar();break;
             case R.id.btnLimpiar:limpiarInput();break;
+
         }
 
 

@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewUsersActivity" />
-        <activity android:name=".RegisterUsersActivity"></activity>
+        <activity android:name=".activities.ViewUsersActivity" />
+        <activity android:name=".activities.RegisterUsersActivity" />
+        <activity android:name=".activities.ViewUsersListViewActivity" />
+        <activity android:name=".activities.SpinnerViewUsersActivity" />
+        <activity android:name=".activities.IndexActivity" />
+        <activity android:name=".activities.RegisterNewUserActivity"></activity>
     </application>
 
 </manifest>

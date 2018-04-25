@@ -9,7 +9,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fernana6.sqlite.ViewUsersActivity">
+    tools:context="com.example.fernana6.sqlite.activities.ViewUsersActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -18,20 +18,20 @@
         android:text="Consultar Usuarios"
         android:textSize="30dp"
         android:paddingBottom="16dp"/>
-
-    <LinearLayout
-        android:orientation="vertical"
+    <EditText
+        android:id="@+id/consultaID"
+        android:hint="ID usuario que buscar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
 
-        <EditText
-            android:id="@+id/consultaID"
-            android:hint="ID usuario que buscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingRight="16dp"
-            android:inputType="number"
-            />
 
         <Button
             android:onClick="onClick"
@@ -40,7 +40,18 @@
             android:layout_height="wrap_content"
             android:text="Buscar"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+        />
     </LinearLayout>
 
     <LinearLayout
@@ -61,28 +72,14 @@
             android:hint="Telefono"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
+
+    <Button
+        android:id="@+id/btnVerTodosLosUsuarios"
+        android:onClick="onClick"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:onClick="onClick"
-            android:id="@+id/btnLimpiar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Limpiar"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:onClick="onClick"
-            android:id="@+id/btnEliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Eliminar"
-            android:textAllCaps="false"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:text="Ver usuarios"
+        android:textAllCaps="false"/>
 </LinearLayout>
 
 

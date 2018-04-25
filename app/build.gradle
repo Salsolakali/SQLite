@@ -28,6 +28,6 @@ dependencies {
 
     //Show realtime database
     compile 'com.google.code.gson:gson:2.8.1'
-    debugCompile 'com.amitshekhar.android:debug-db:1.0.1'
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.3'
 
 }
